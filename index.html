@@ -1,0 +1,122 @@
+<!doctype html> <!-- HTML5 doctype -->
+
+<html lang="en"> <!-- HTML5 opening HTML tag with language. The HTML tag can also be used on it's own -->
+
+	<head>
+		
+		<meta charset="UTF-8"> <!-- HTML5 charset -->
+		
+		<!-- The viewport meta element is a feature it is 
+		important for responsive web design and mobile-first design: 
+		This <meta> element includes two attributes that work together 
+		as a name/value set. 
+		In this case, the name is set to viwport and the value is 
+		width=device-width, initial-scale=1. This is used by mobile devices only. You’ll notice the value has two parts to it, described here:
+
+		width=device-width: the pixel width of the viewport that you want 
+		the website to be rendered at.
+		initial-scale: 
+		this should be a positive number between 0.0 and 10.0. 
+		A value of “1” indicates that there’s a 1:1 ratio between 
+		the device width and the viewport size.-->
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!--<meta name="description" content="A simple HTML5 Template 
+		for new projects.">  -->
+		
+		<title>Survey</title>
+		
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+			</script>
+		<![endif]-->
+		
+	</head>
+
+	<body>
+			
+			<h1>Let's go hiking together! </h1>
+			<p>Which season do you prefer? Leave your information below to help us better arrange the next hiking</p>
+		
+			
+			
+			<form action="MAILTO:Eugene.McLaughlin@ncirl.ie" method="post"
+			enctype="text/plain">
+				<table>
+					<tr>
+						<td><label class="name">Name:</label></td>
+						<td><input type="text" name="name" size="60" /></td>
+					</tr>
+					<tr>
+						<td><label class="school">School:</label></td>
+						<td><input type="text" name="school" size="60"/></td>
+					</tr>
+					<tr>
+						<td><label class="city">City:</label></td>
+						<td><input type="text" name="city" size="60"/></td>
+					</tr>
+					
+					<tr>
+						<td><label class="email">Email:</label></td>
+						<td><input type="text" name="email" size="60"/></td>
+					</tr>
+					<tr>
+						<td><label class="season">Season:</label></td>
+						<td>
+							<select id="season" name="season">
+							<option value="Spring"> Spring</option> 
+							<option value="Summer"> Summer</option>
+							<option value="Autumn"> Autumn</option>
+							<option value="Winter"> Winter</option>
+							</select>
+						</td>				
+					</tr>
+					<tr>
+						<td>Scenery:</td>
+						<td>
+							<label class="scenery"></label>
+							<input type="checkbox" name="SceneryTypeSea" value="Seaside"/>Seaside 
+							<input type="checkbox" name="SceneryTypeGrassland" value="Grassland"/>Grassland 
+							<input type="checkbox" name="SceneryTypeMountains" value="Mountains"/>Mountains 
+						</td>
+					</tr>
+					<tr>
+						<td>Distance:</td>
+						<td>
+							<label class="radio-inline">
+							<input type="radio" name="distance" value="less than 3 km">less than 3km
+							</label>
+							
+							<label class="radio-inline">
+							<input type="radio" name="distance" value="3km - 7km">3km - 7km
+							</label>
+							
+							<label class="radio-inline">
+							<input type="radio" name="distance" value="7km or more">7km or more
+							</label>
+						</td>
+					</tr>
+					<tr>
+						<td><label class="additional-comments">Additional Comments:</label></td>
+						<td>
+							<textarea id="comments" name="comment" rows="5" cols="50"
+							 placeholder="Anything that you would like us to know!"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="submit" value="Send Your Order"></td>
+						<td><input type="reset" value="Reset"></td>
+						
+					</tr>
+				</table>
+			</form>
+			
+			
+			
+			
+			
+			
+	</body>
+
+</html>
